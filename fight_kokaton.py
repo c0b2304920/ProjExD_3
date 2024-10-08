@@ -202,7 +202,7 @@ def main():
                     
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
-        for k, beam     in enumerate(beams):
+        for k, beam in enumerate(beams):
             beam.update(screen) 
             if beam.vx > WIDTH:
                 del  beams[k]
